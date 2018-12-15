@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Forex Express</string>
+    <string name="signup">Sign Up Form</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="not_a_user_signup">Not a User? SignUp</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="already_registered_login">Already Registered? Login</string>
+    <string name="register">Register</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+    <string name="convert_currency">Convert</string>
+    <string name="view_statistics">View Statistics</string>
+    <string name="locate_bureau">Locate Bureau</string>
+    <string name="bureau_rankings">Bureau Rankings</string>
+    <string name="welcome">Welcome</string>
+    <string name="select">Select a Forex Bureau</string>
+    <string name="select2">Choose a Currency</string>
+    <string name="convertinfo">Helps a user convert currency to a desired country’s currency.</string>
+
+    <string-array name="Ranking_Details">
+        <item> - - Please Select Currency for Ranking - -</item>
+        <item>USD</item>
+        <item>Euro</item>
+        <item>GB Pound </item>
+        <item>KSHS</item>
+        <item>TSHS</item>
+        <item>RF</item>
+    </string-array>
+
+    <string-array name="Bureau_Details">
+        <item> - -Choose a Forex Bureau- - </item>
+        <item>Metropolitan Forex Bureau Ltd</item>
+        <item>Jetset Forex Bureau</item>
+        <item>Shumuk Forex Bureau</item>
+        <item>Prime Forex Bureau Ltd</item>
+
+    </string-array>
+    <string-array name="Currency_Details">
+        <item> - - Please Select Currency - -</item>
+        <item>USD</item>
+        <item>Euro</item>
+        <item>GB Pound </item>
+        <item>KSHS</item>
+        <item>UGX</item>
+        <item>TSHS</item>
+        <item>RF</item>
+
+    </string-array>
+    <string name="rankingList">Currency for Ranking</string>
+    <string name="buying_selling">Buying or Selling</string>
+    <string name="next">Next</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="login">Login</string>
+    <string name="currency_buying">Currency Buying</string>
+    <string name="changing_string">Changing String</string>
+    <string name="forex_name">Forex Name</string>
+    <string name="forex_rate">Forex Rate</string>
+    <string name="rank">Rank</string>
+
+    <string-array name="buying_selling_details">
+        <item> - - Select Buying/Selling - -</item>
+        <item> Buying</item>
+        <item>Selling</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="convcurrView">ConvCurrView</string>
+    <string name="buttonConv">Convert</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="bureau">Bureau:</string>
+    <string name="metropolitan_forex_bureau_ltd">Metropolitan Forex Bureau Ltd</string>
+    <string name="jetset_forex_bureau">Jetset Forex Bureau</string>
+    <string name="shumuk_forex_bureau">Shumuk Forex Bureau</string>
+
+    <string name="title_activity_forex_splash_screen">ForexSplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_about_forex">About</string>
+</resources>

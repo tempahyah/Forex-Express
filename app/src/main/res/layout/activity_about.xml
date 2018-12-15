@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3399FF"
+    tools:context="com.forexexpress.About">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/app_logo"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:fontFamily="monospace"
+        android:text="Forex Express"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:fontFamily="serif-monospace"
+        android:text="Version 1.0"
+        android:textColor="#FFFFCC"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/textView3"
+        android:layout_alignRight="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:fontFamily="serif-monospace"
+        android:text="© 2016-2017 ForexExpress Inc."
+        android:layout_below="@+id/imageView4"
+        android:textColor="#FFFFCC"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif-monospace"
+        android:text="All rights reserved."
+        android:textColor="#FFFFCC"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+         />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="LICENCE"
+        android:textColor="#CCCCFF"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+</RelativeLayout>

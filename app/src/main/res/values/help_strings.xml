@@ -1,0 +1,14 @@
+<resources>
+    <string name="help_title_section1">Convert Currency</string>
+    <string name="help_text_section1">Helps a user convert currencies.</string>
+    <string name="help_page_intro">Welcome dear User. This page provides help and required steps on Buttons.
+                                    Hope you find it useful. Thank you. @Forex Express Team
+    </string>
+    <string name="help_title_section2">Locate</string>
+    <string name="help_text_section2">Locate a particular bureau around town.</string>
+    <string name="help_title_section3">Bureau Rankings</string>
+    <string name="help_text_section3">View bureaus providing the best rates around Kampala town.</string>
+    <string name="help_title_section4">View Statistics</string>
+    <string name="help_text_section4">View Currency performance as regards to a particular time.</string>
+
+</resources>

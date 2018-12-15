@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="metropTitle">Metropolitan Forex Bureau</string>
+    <string name="metropAdress">P.O.Box 8166, Kampala(U)</string>
+    <string name="metropTelephone">Tel: +256 41 4232620</string>
+
+    <string name="jetsetTitle">Jetset Forex Bureau</string>
+    <string name="jetsetAdress">Kimathi Avenue, Kampala (U) </string>
+    <string name="jetsetTelephone">Customer Telephone: +256 777 959 578</string>
+    <string name="jetsetWhatsApp">WhatsApp: +256 777 790 160</string>
+    <string name="jetsetTel">Tel: +256 414 237 704</string>
+
+    <string name="shumukTitle">Shumuk Forex Bureau</string>
+    <string name="shumukAdress">P.O.BOX 6552, Kampala Speke Rd</string>
+    <string name="shumukTel">Tel: +256 41 4259736</string>
+    <string name="shumukOpen"> Open until 6:00 AM</string>
+    <string name="shumukTelephone">Customer Telephone: +256 41 4259736</string>
+
+    <string name="primeTitle">Prime Forex Bureau Ltd</string>
+    <string name="primeAdress1">AGIP HOUSE, Plot 9 Kampala Rd,</string>
+    <string name="primeAdress2">Opposite Rainbow arcade, adjacent,</string>
+    <string name="primeAdress3">Kenya Commmercial Bank (KCB)</string>
+    <string name="primeAdress4">P.O. BOX 28401, Kampala (U)</string>
+    <string name="primeTel">Tel: +256 41 234 378</string>
+    <string name="primeEmail"> Email: primefxb@jwayafrica.com</string>
+    <string name="primeMDTelephone">Manager Telephone: +256 752 728 738</string>
+
+
+
+
+
+
+
+</resources>

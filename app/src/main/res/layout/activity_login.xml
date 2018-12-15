@@ -1,0 +1,144 @@
+<!-- copyrighted content owned by Android Arena (www.androidarena.co.in)-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="#99CCFF"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="25dp"
+                android:text="@string/login"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1.26"
+            tools:ignore="InefficientWeight"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="133dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription,NestedWeights"
+                android:layout_weight="0.20" />
+
+            <EditText
+                android:id="@+id/_emailLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="#f3f3f3"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/passwordLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="#f3f3f3"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/signUpLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/not_a_user_signup"
+                    android:textColor="#0066FF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="190dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn"
+                android:text="@string/login_button"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/googlebutton"
+                android:layout_width="205dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_weight="0.23"
+                android:text="Login with google+"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText,NestedWeights" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

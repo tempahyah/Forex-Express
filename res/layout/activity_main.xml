@@ -1,0 +1,111 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText" >
+
+    
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Help"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#00FF33"
+        android:clickable="true"
+        android:onClick="click"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:text="Logout"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:clickable="true"
+    android:onClick="click"
+        android:textColor="#66FFFF" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:text="|"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:textColor="#FFFF00" />
+
+    <Button
+        android:id="@+id/ViewStatisticsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BureauRankingsButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/BureauRankingsButton"
+        android:layout_marginBottom="55dp"
+        android:background="@layout/reflected_gradient_effect"
+        android:text="@string/view_statistics"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/BureauRankingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ViewStatisticsButton"
+        android:layout_alignLeft="@+id/LocateBureauButton"
+        android:layout_alignRight="@+id/LocateBureauButton"
+        android:layout_marginBottom="34dp"
+        android:background="@layout/reflected_gradient_effect3"
+        android:text="@string/bureau_rankings"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/ConvertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="63dp"
+        android:background="@layout/linear_gradient_light_to_dark_effect"
+        android:text="@string/convert"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/LocateBureauButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ConvertButton"
+        android:layout_alignRight="@+id/ConvertButton"
+        android:layout_below="@+id/ConvertButton"
+        android:layout_marginTop="30dp"
+        android:background="@layout/reflected_gradient_effect2"
+        android:text="Locate Bureau"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

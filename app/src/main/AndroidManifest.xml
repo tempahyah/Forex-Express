@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.forexexpress">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ForexSplashScreen"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUp" />
+        <activity
+            android:name=".Convert"
+            android:label="Convert Currency" />
+        <activity
+            android:name=".BureauRankings"
+            android:label="Bureau Rankings" />
+        <activity
+            android:name=".LocateBureau"
+            android:label="Locate Bureau" />
+        <activity
+            android:name=".Help"
+            android:label="Help" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".BuyingActivity"
+            android:label="Buying Rates Summary" />
+        <activity
+            android:name=".SellingActivity"
+            android:label="Selling Rates Summary" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBT5rhVJTK44OfCYlpIjuQeEH9D3leHpjo" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Update.Metropolitan_Update" />
+        <activity android:name=".Update.Jetset_Update" />
+        <activity android:name=".Update.Shumuk_Update" />
+        <activity android:name=".Update.Prime_Update" />
+        <activity
+            android:name=".LocationOption"
+            android:label="Locate Bureau" />
+        <activity
+            android:name=".ContactInfo"
+            android:label="Contact Information" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".BureauRates" />
+        <activity android:name=".About" />
+        <activity android:name=".sample.rates.view.SelectActivity"/>
+        <activity android:name=".sample.rates.view.MainActivity"/>
+        <activity
+            android:name=".AboutForex"
+            android:label="@string/title_activity_about_forex"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Conversion.FireBaseListAdapter"></activity>
+    </application>
+
+</manifest>

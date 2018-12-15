@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Forex Express</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_log_in">LogIn</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="sign_up">Sign up</string>
+    <string name="last_name">Last Name</string>
+    <string name="submit_details">Submit Details</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="image_1">Image1</string>
+    <string name="image_2">Image2</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">password</string>
+    <string name="register_here">Register Here</string>
+    <string name="_">|</string>
+    <string name="forgot_password_">Forgot Password?</string>
+    <string name="welcome">Welcome</string>
+    <string name="convert">Convert</string>
+    <string name="locate">Locate</string>
+    <string name="bureau_rankings">Bureau Rankings</string>
+    <string name="view_statistics">View Statistics</string>
+    <string name="title_activity_convert">Convert</string>
+    <string name="select_bureau">Select Bureau</string>
+    <string name="currency_to_be_converted_to">Currency to be converted to</string>
+    <string name="currency_to_be_converted_from">Currency to be converted from</string>
+    <string name="convert_currency">Convert Currency</string>
+    <string name="currency_from">Currency From</string>
+    <string name="currency_to">Currency To</string>
+    <string name="amount_to_be_converted">Amount to be converted</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="title_activity_locate_bureau">Locate Forex Bureau</string>
+    <string name="title_activity_bureau_rankings">Bureau Rankings</string>
+    <string name="title_activity_view_statistics">View Statistics</string>
+    <string name="title_activity_help">Help</string>
+    <string name="don_t_have_an_account_">Don\'t Have an account?</string>
+    <string name="register">Register</string>
+    <string name="title_activity_main_page">Forex Express</string>
+
+</resources>

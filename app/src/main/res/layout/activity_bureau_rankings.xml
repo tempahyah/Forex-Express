@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/pic7"
+    android:orientation="vertical"
+    tools:context="com.forexexpress.BureauRankings">
+
+    <Spinner
+        android:id="@+id/_spinner2"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="#ffffff"
+        android:entries="@array/Ranking_Details"
+        android:prompt="@string/rankingList"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/_spinner1"
+        android:layout_alignStart="@+id/_spinner1" />
+
+    <Spinner
+        android:id="@+id/_spinner1"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="#ffffff"
+        android:entries="@array/buying_selling_details"
+        android:prompt="@string/buying_selling"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/_spinner2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/_bureauRankings"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginTop="43dp"
+        android:background="@layout/reflected_gradient_effect3"
+        android:text="@string/next"
+        android:layout_below="@+id/_spinner1"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription=""
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:ignore="ContentDescription"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/changing_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/changing_string"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+

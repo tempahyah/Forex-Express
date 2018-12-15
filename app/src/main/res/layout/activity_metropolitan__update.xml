@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        tools:context="com.forexexpress.Update.Metropolitan_Update">
+
+        <TextView
+            android:id="@+id/metropolitan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="#CC3399"
+            android:layout_marginTop="78dp"
+            android:text="@string/metropolitan_forex_bureau_ltd"
+            android:textSize="24sp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/currency"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#9966FF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/metropolitan"
+            android:layout_alignStart="@+id/metropolitan"
+            android:layout_below="@+id/metropolitan"
+            android:layout_marginTop="22dp"
+            android:text="Currency"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/buying"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Buying"
+            tools:ignore="HardcodedText"
+            android:layout_alignBaseline="@+id/currency"
+            android:layout_alignBottom="@+id/currency"
+            android:layout_alignLeft="@+id/usd_buying_metrop"
+            android:layout_alignStart="@+id/usd_buying_metrop"
+            android:layout_alignRight="@+id/usd_buying_metrop"
+            android:layout_alignEnd="@+id/usd_buying_metrop" />
+
+        <TextView
+            android:id="@+id/selling"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#990066"
+            android:text="Selling"
+            tools:ignore="HardcodedText"
+            android:layout_alignBaseline="@+id/buying"
+            android:layout_alignBottom="@+id/buying"
+            android:layout_alignLeft="@+id/usd_selling_metrop"
+            android:layout_alignStart="@+id/usd_selling_metrop"
+            android:layout_alignRight="@+id/usd_selling_metrop"
+            android:layout_alignEnd="@+id/usd_selling_metrop" />
+
+        <TextView
+            android:id="@+id/usd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_alignLeft="@+id/currency"
+            android:layout_alignStart="@+id/currency"
+            android:layout_below="@+id/currency"
+            android:textColor="#9966FF"
+            android:layout_marginTop="28dp"
+            android:text="USD"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/euro"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/euro_buying_metrop"
+            android:layout_alignBottom="@+id/euro_buying_metrop"
+            android:layout_alignLeft="@+id/usd"
+            android:textColor="#9966FF"
+            android:layout_alignStart="@+id/usd"
+            android:text="Euro"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/gb_pound"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/euro"
+            android:layout_alignStart="@+id/euro"
+            android:layout_below="@+id/euro"
+            android:textColor="#9966FF"
+            android:layout_marginTop="36dp"
+            android:text="GB_POUND"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/kshs"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gb_pound"
+            android:layout_alignStart="@+id/gb_pound"
+            android:layout_below="@+id/gb_pound"
+            android:layout_marginTop="31dp"
+            android:textColor="#9966FF"
+            android:text="KSHS"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tshs"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/kshs"
+            android:layout_alignStart="@+id/kshs"
+            android:layout_below="@+id/kshs"
+            android:layout_marginTop="38dp"
+            android:textColor="#9966FF"
+            android:text="TSHS"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/rf"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tshs"
+            android:layout_alignStart="@+id/tshs"
+            android:layout_below="@+id/tshs"
+            android:textColor="#9966FF"
+            android:layout_marginTop="32dp"
+            android:text="RF"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/usd_selling_metrop"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textColor="#990066"
+            android:layout_alignBaseline="@+id/usd_buying_metrop"
+            android:layout_alignBottom="@+id/usd_buying_metrop"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/usd_buying_metrop"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/usd"
+            android:layout_alignBottom="@+id/usd"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/euro_buying_metrop"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/usd_buying_metrop"
+            android:layout_alignStart="@+id/usd_buying_metrop"
+            android:layout_below="@+id/usd_buying_metrop"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/euro_selling_metrop"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/usd_selling_metrop"
+            android:layout_alignStart="@+id/usd_selling_metrop"
+            android:textColor="#990066"
+            android:layout_alignTop="@+id/euro_buying_metrop"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/gbPound_buying_metrop"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/gb_pound"
+            android:layout_alignBottom="@+id/gb_pound"
+            android:layout_alignLeft="@+id/euro_buying_metrop"
+            android:layout_alignStart="@+id/euro_buying_metrop"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/gbPound_selling_metrop"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/euro_selling_metrop"
+            android:layout_alignStart="@+id/euro_selling_metrop"
+            android:layout_alignTop="@+id/gbPound_buying_metrop"
+            android:textColor="#990066"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/kshs_buying_metrop"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/kshs"
+            android:layout_alignBottom="@+id/kshs"
+            android:layout_alignLeft="@+id/gbPound_buying_metrop"
+            android:layout_alignStart="@+id/gbPound_buying_metrop"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/kshs_selling_metrop"
+            android:layout_width="80dp"
+            android:textColor="#990066"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/gbPound_selling_metrop"
+            android:layout_alignStart="@+id/gbPound_selling_metrop"
+            android:layout_alignTop="@+id/kshs_buying_metrop"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/tshs_buying_metrop"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/tshs"
+            android:layout_alignBottom="@+id/tshs"
+            android:layout_alignLeft="@+id/kshs_buying_metrop"
+            android:layout_alignStart="@+id/kshs_buying_metrop"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/tshs_selling_metrop"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textColor="#990066"
+            android:layout_alignLeft="@+id/kshs_selling_metrop"
+            android:layout_alignStart="@+id/kshs_selling_metrop"
+            android:layout_alignTop="@+id/tshs_buying_metrop"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/rf_buying_metrop"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/rf"
+            android:layout_alignBottom="@+id/rf"
+            android:layout_alignLeft="@+id/tshs_buying_metrop"
+            android:layout_alignStart="@+id/tshs_buying_metrop"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/rf_selling_metrop"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/tshs_selling_metrop"
+            android:layout_alignStart="@+id/tshs_selling_metrop"
+            android:layout_alignTop="@+id/rf_buying_metrop"
+            android:ems="10"
+            android:textColor="#990066"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/submit_Rates"
+            android:layout_width="200dp"
+            android:layout_height="29dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/gb_pound"
+            android:layout_toRightOf="@+id/gb_pound"
+            android:background="@layout/linear_gradient_light_to_dark_effect"
+            android:text="Submit Rates"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/loggedIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/currency"
+            android:layout_alignEnd="@+id/usd_selling_metrop"
+            android:layout_alignRight="@+id/usd_selling_metrop"
+            android:layout_marginBottom="30dp" />
+
+            <Button
+                android:id="@+id/logoutBureau"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@layout/reflected_gradient_effect2"
+                android:text="Logout"
+                tools:ignore="HardcodedText"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/selling"
+                android:layout_alignStart="@+id/selling" />
+
+    </RelativeLayout>
+</ScrollView>

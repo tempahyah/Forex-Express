@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="com.forexexpress.Convert"
+    android:background="@drawable/pic4"
+    android:weightSum="1">
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:entries="@array/Bureau_Details"
+        android:prompt="@string/select"
+        android:spinnerMode="dialog"
+        android:textColor="#ffffff"
+        tools:ignore="MissingConstraints,UnknownId"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="105dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_above="@+id/spinner2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="19dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:entries="@array/Currency_Details"
+        android:prompt="@string/select2"
+        android:spinnerMode="dialog"
+        android:textColor="#ffffff"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="189dp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/spinner3"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:entries="@array/Currency_Details"
+        android:prompt="@string/select2"
+        android:spinnerMode="dialog"
+        android:textColor="#ffffff"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="283dp"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/amount_to_convert"
+        android:layout_alignLeft="@+id/spinner2"
+        android:layout_alignStart="@+id/spinner2" />
+
+    <EditText
+        android:id="@+id/amount_to_convert"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:ignore="HardcodedText,LabelFor,MissingConstraints"
+        tools:layout_editor_absoluteX="286dp"
+        tools:layout_editor_absoluteY="398dp"
+        android:layout_alignBaseline="@+id/displayFrom"
+        android:layout_alignBottom="@+id/displayFrom"
+        android:layout_toRightOf="@+id/_enterAmount"
+        android:layout_toEndOf="@+id/_enterAmount"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp" />
+
+    <EditText
+        android:id="@+id/amount_Converted"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:ignore="LabelFor,MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteX="286dp"
+        tools:layout_editor_absoluteY="484dp"
+        android:layout_below="@+id/amount_to_convert"
+        android:layout_alignLeft="@+id/amount_to_convert"
+        android:layout_alignStart="@+id/amount_to_convert" />
+
+    <Button
+        android:id="@+id/ConvertButtoN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@layout/reflected_gradient_effect2"
+        android:text="Convert"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="413dp"
+        tools:layout_editor_absoluteY="564dp"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/amount_Converted"
+        android:layout_alignRight="@+id/amount_Converted"
+        android:layout_alignEnd="@+id/amount_Converted"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <TextView
+        android:id="@+id/_enterAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#330099"
+        android:text="@string/enter_amount"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="398dp"
+        tools:ignore="MissingConstraints,RelativeOverlap"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#330099"
+        android:text="@string/from"
+        android:layout_alignBottom="@+id/spinner2"
+        android:layout_alignLeft="@+id/_enterAmount"
+        android:layout_alignStart="@+id/_enterAmount" />
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#330099"
+        android:text="@string/to"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/spinner3"
+        android:layout_alignBottom="@+id/spinner3"
+        android:layout_alignLeft="@+id/from"
+        android:layout_alignStart="@+id/from" />
+
+    <TextView
+        android:id="@+id/manipulatedValue"
+        android:textSize="18sp"
+        android:textColor="#330099"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/bureauname"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#330099"
+        android:layout_height="wrap_content"
+        android:text="@string/bureau"
+        android:layout_alignBaseline="@+id/spinner"
+        android:layout_alignBottom="@+id/spinner"
+        android:layout_alignLeft="@+id/from"
+        android:layout_alignStart="@+id/from" />
+
+    <TextView
+        android:id="@+id/displayFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_alignBottom="@+id/_enterAmount"
+        android:layout_toEndOf="@+id/amount_Converted"
+        android:layout_toRightOf="@+id/amount_Converted"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/displayTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_alignTop="@+id/amount_Converted"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/amount_Converted"
+        android:layout_toRightOf="@+id/amount_Converted" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONVERT CURRENCY"
+        android:textColor="#6600FF"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/spinner"
+        android:layout_toRightOf="@+id/from"
+        android:layout_toEndOf="@+id/from" />
+
+
+</RelativeLayout>
