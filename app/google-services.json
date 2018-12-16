@@ -15,14 +15,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "558957329010-toqrcr50dgu51qjq92cgldu5np1929lq.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.forexexpress",
-            "certificate_hash": "6ff42a534587120d1ed0bbe9a0613e069eb5f6a2"
-          }
-        },
-        {
           "client_id": "558957329010-a1fe9arsj2nc5fg98ar24hquvc1ugmes.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -36,6 +28,22 @@
           "android_info": {
             "package_name": "com.forexexpress",
             "certificate_hash": "17fc0fd53b81edaf1011a898aac7407241ba7b71"
+          }
+        },
+        {
+          "client_id": "558957329010-toqrcr50dgu51qjq92cgldu5np1929lq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.forexexpress",
+            "certificate_hash": "6ff42a534587120d1ed0bbe9a0613e069eb5f6a2"
+          }
+        },
+        {
+          "client_id": "558957329010-im77cc6o23ngj219i71mhb5q365qja13.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.forexexpress",
+            "certificate_hash": "f90ad21fd786c76a99fdacb56a750ab3dc52b6e1"
           }
         },
         {

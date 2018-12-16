@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bureau_ranking"
+            android:icon="@drawable/ranking"
+            android:title="Bureau Ranking" />
+        <item
+            android:id="@+id/nav_locate_bureau"
+            android:icon="@drawable/locate"
+            android:title="Locate Bureau" />
+
+        <item
+        android:id="@+id/nav_convert_currency"
+        android:icon="@drawable/convert"
+        android:title="Convert Currency" />
+
+        <item
+        android:id="@+id/nav_calculator"
+        android:icon="@drawable/calculator"
+        android:title="Forex Calculator" />
+
+        <item
+            android:id="@+id/nav_bou"
+            android:icon="@drawable/bou"
+            android:title="Bank of Uganda Rates" />
+    </group>
+
+    <item android:title=" ">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/help"
+                android:title="Help" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/exit"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

@@ -81,13 +81,14 @@
             android:label="@string/app_name" />
         <activity android:name=".BureauRates" />
         <activity android:name=".About" />
-        <activity android:name=".sample.rates.view.SelectActivity"/>
-        <activity android:name=".sample.rates.view.MainActivity"/>
+        <activity android:name=".sample.rates.view.SelectActivity" />
+        <activity android:name=".sample.rates.view.MainActivity" />
         <activity
             android:name=".AboutForex"
             android:label="@string/title_activity_about_forex"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Conversion.FireBaseListAdapter"></activity>
+        <activity android:name=".Conversion.FireBaseListAdapter" />
+        <activity android:name=".Calculator"></activity>
     </application>
 
 </manifest>

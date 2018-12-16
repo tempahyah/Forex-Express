@@ -4,13 +4,19 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.forexexpress.Conversion.FireBaseListAdapter;
 import com.forexexpress.Update.Jetset_Update;
@@ -28,21 +34,31 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private GoogleApiClient mGoogleApiClient;
     private TextView logged_in_as;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
+    private TextView tvUserName, tvUserEmail;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+
+        //setSupportActionBar(toolbar);
+        if (toolbar != null) {
+            //setSupportActionBar(toolbar);
+            toolbar.setTitle("Welcome");
+        }
+
         mAuth = FirebaseAuth.getInstance();
 
-        logged_in_as = (TextView) findViewById(R.id.textViewWelcome);
+        logged_in_as = findViewById(R.id.textViewWelcome);
 
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -125,13 +141,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button firebutton = (Button) findViewById(R.id.firebaseView);
-        firebutton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), SelectActivity.class);
-                startActivityForResult(myIntent, 0);
-            }
-        });
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        View headerView = navigationView.getHeaderView(0);
+        navigationView.setNavigationItemSelectedListener(this);
+
+        tvUserName = headerView.findViewById(R.id.tvUserName);
+        tvUserEmail = headerView.findViewById(R.id.tvUserEmail);
+
+        // Displaying the user details on the screen
+        FirebaseUser user = mAuth.getCurrentUser();
+        tvUserName.setText("Logged in as "+user.getDisplayName());
+        tvUserEmail.setText(user.getEmail());
 
 
     }
@@ -188,5 +214,57 @@ public class MainActivity extends AppCompatActivity {
 
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.nav_bureau_ranking) {
+
+            Intent bureauRankings = new Intent(this, BureauRankings.class);
+            startActivity(bureauRankings);
+
+        } else if (id == R.id.nav_locate_bureau) {
+
+            Intent locateBureau = new Intent(this, LocationOption.class);
+            startActivity(locateBureau);
+
+        }else if (id == R.id.nav_convert_currency) {
+            Intent convertCurrency = new Intent(this, Convert.class);
+            startActivity(convertCurrency);
+
+        }else if (id == R.id.nav_about) {
+            Intent about_us = new Intent(this, About.class);
+            startActivity(about_us);
+
+        } else if (id == R.id.nav_help) {
+            Intent help = new Intent(this, Help.class);
+            startActivity(help);
+
+        }else if (id==R.id.nav_logout){
+            mAuth.signOut();
+            // Google sign out
+            Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
+                    new ResultCallback<Status>() {
+                        @Override
+                        public void onResult(@NonNull Status status) {
+
+                        }
+                    });
+
+            finish();
+            startActivity(new Intent(this, LoginActivity.class));
+
+        }
+        else if(id==R.id.nav_calculator){
+            Intent calculator = new Intent(this, Calculator.class);
+            startActivity(calculator);
+        }
+
+
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 }
