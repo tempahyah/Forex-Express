@@ -107,4 +107,6 @@
     <string name="buttonSeven">7</string>
     <string name="buttonEight">8</string>
     <string name="buttonNine">9</string>
+    <string name="backdrop_title">Forex Express</string>
+    <string name="backdrop_subtitle">Welcome</string>
 </resources>
